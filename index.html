@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 <body>
 <!-- header section starts -->
@@ -42,15 +44,47 @@
 <!-- home section starts -->
 
     <section class="home" id="home">
-        <div class="container">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="home-slider swiper mySwiper">
+            <div class="wrapper swiper-wrapper">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>our special dish</span>
                         <h3>spicy noodles</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex aliquid officiis.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="/images/home-img-1.png">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>friend chicken</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex aliquid officiis.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="/images/home-img-2.png">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>hot pizza</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex aliquid officiis.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="/images/home-img-3.png">
                     </div>
                 </div>
             </div>
+
+            <div class="swiper-pagination"></div>
+
         </div>
     </section>
 
@@ -68,6 +102,8 @@
 
 
     <script src="https://kit.fontawesome.com/5ed6520c8d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
+    
 </body>
 </html>
